@@ -8,20 +8,24 @@
     tools:context="com.example.vinod.beeradviserapp.FindBeerActivity" >
 
     <Spinner
-        android:id="@+id/spinner3"
+        android:id="@+id/color"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:entries="@array/beerListArray"
+        />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="@string/find_beer"
+        android:onClick="onClickFindBeer"
+        />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/brands"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="@string/brands" />
 </LinearLayout>
 
